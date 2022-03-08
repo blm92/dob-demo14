@@ -1,0 +1,115 @@
+# See https://github.com/Tecnativa/doodba#optodoocustomsrcreposyaml
+./odoo:
+  defaults:
+    # Shallow repositories ($DEPTH_DEFAULT=1) are faster & thinner
+    # You may need a bigger depth when merging PRs (use $DEPTH_MERGE
+    # for a sane value of 100 commits)
+    depth: $DEPTH_DEFAULT
+  remotes:
+    ocb: https://github.com/OCA/OCB.git
+    odoo: https://github.com/odoo/odoo.git
+    openupgrade: https://github.com/OCA/OpenUpgrade.git
+  target: ocb $ODOO_VERSION
+  merges:
+    - ocb $ODOO_VERSION
+    # Example of a merge of the PR with the number <PR>
+    # - oca refs/pull/<PR>/head
+
+./bank-payment:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/bank-payment.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./contract:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/contract.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./crm:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/crm.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./dms:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/dms.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./helpdesk:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/helpdesk.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./l10n-spain:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/l10n-spain.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./project:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/project.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./social:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/social.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./timesheet:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/timesheet.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./web:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    oca: https://github.com/OCA/web.git
+  target: oca $ODOO_VERSION
+  merges:
+    - oca $ODOO_VERSION
+
+./helpdesk-ce-addons:
+  defaults:
+    depth: $DEPTH_DEFAULT
+  remotes:
+    blm92: https://github.com/blm92/helpdesk-ce-addons.git
+  target: blm92 $ODOO_VERSION
+  merges:
+    - blm92 $ODOO_VERSION

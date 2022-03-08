@@ -1,0 +1,32 @@
+bank-payment:
+  - "*"
+
+contract:
+  - "*"
+
+crm:
+  - "*"
+
+dms:
+  - "*"
+
+helpdesk:
+  - "*"
+
+l10n-spain:
+  - "*"
+
+project:
+  - "*"
+
+social:
+  - "*"
+
+timesheet:
+  - "*"
+
+web:
+  - "*"
+
+helpdesk-ce-addons:
+  - "*"
